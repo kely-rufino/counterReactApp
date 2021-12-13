@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Button} from "./Button";
 
 function Counter(){
     const [value, updateValue] = useState(0)
@@ -11,11 +12,16 @@ function Counter(){
 
     return(
         <div>
-            <input type="text" value = {value} />
-            <button onClick={addOne}> + </button>
-            <button onClick={lessOne}> - </button>
+            <h1>{value}</h1>
+            <Button clickHandler={() => {
+                updateValue(value + 1)
+            }}>+</Button>
+            <Button clickHandler={() => {
+                updateValue(value - 1)
+            }}>-</Button>
         </div>
     )
 }
-
 export default Counter;
+
+}
