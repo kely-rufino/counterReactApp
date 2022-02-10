@@ -1,27 +1,19 @@
 import {useState} from "react";
-import {Button} from "./Button";
+import { Button } from "./Button";
+
 
 function Counter(){
-    const [value, updateValue] = useState(0)
-    function addOne(){
-       updateValue(value +1)
-    }
-    function lessOne(){
-        updateValue(value-1)
-    }
-
+   const [value, updateValue] = useState(0)
     return(
         <div>
             <h1>{value}</h1>
             <Button clickHandler={() => {
                 updateValue(value + 1)
-            }}>+</Button>
+            }} text = "+"/>
             <Button clickHandler={() => {
                 updateValue(value - 1)
-            }}>-</Button>
+            }} text = "-"/>
         </div>
     )
 }
 export default Counter;
-
-}

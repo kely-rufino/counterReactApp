@@ -1,16 +1,12 @@
-import './App.css';
-import Counter from './components/Counter'
-import Multiply from "./components/Multiply";
-import Person from "./components/Person";
 
+import './App.css';
+import { LoadPeople } from './setEffectExercise/FetchPeople';
 
 
 function App() {
     return (
-        <div className= "App">
-            <Person />
-            <Counter/>
-            <Multiply/>
+       <div className="App">
+            <LoadPeople/>
         </div>
     );
 }

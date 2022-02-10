@@ -1,15 +1,15 @@
 import {useState} from "react";
 import {Button} from "./Button";
 
-function Person() {
+function Person({name}) {
 
     const [showPerson, hidePerson] = useState(true)
-    return(
+    return (
         <div>
             <Button clickHandler={() => {
                 hidePerson(!showPerson)
-            }}>Hide person</Button>
-            {showPerson && <p>Name</p>}
+            }} text="Hide data"/>
+            {showPerson && <p>{name}</p>}
         </div>
     )
 }

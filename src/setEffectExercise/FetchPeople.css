@@ -1,0 +1,33 @@
+.header {
+    width: 28em;
+    display: flex;
+    flex-direction: column;
+    
+}
+.people{
+    background-color: antiquewhite;
+}
+
+.names-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  padding: 2px;
+  justify-content: space-evenly;
+  border: 0.01em solid rgb(210, 182, 147)
+}
+
+.email-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: -4px;
+  padding: 8px 2px 5px;
+}
+.button{
+    background-color: antiquewhite;
+    width: 13em;
+    height: 5em;
+    align-self: center;
+
+}
